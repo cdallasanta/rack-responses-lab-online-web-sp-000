@@ -3,7 +3,7 @@ class Application
     resp = Rack::Response.new
     time = Time.now.getlocal('+08:00')
 
-    resp.write "#{time.hour}\n"
+    resp.write "#{time}\n"
     resp.write "#{time.zone}\n"
 
     if time.hour >= 12
