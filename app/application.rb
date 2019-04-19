@@ -1,7 +1,7 @@
 class Application
   def call(env)
     resp = Rack::Response.new
-    time = Time.now.getlocal
+    time = Time.now
 
     resp.write "#{time}\n"
     resp.write "#{time.zone}\n"
