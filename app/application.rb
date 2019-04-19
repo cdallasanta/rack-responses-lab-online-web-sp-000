@@ -7,7 +7,7 @@ class Application
     resp.write "#{time.zone}\n"
 
     if time.hour >= 12
-      resp.write "Good Afternoon!, or Morning, these tests aren't helpful..."
+      resp.write "Good Afternoon!"
     else
       resp.write "Good Morning!"
     end
