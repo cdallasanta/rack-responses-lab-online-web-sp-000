@@ -4,7 +4,6 @@ class Application
     time = Time.now.getlocal("+08:00")
 
     resp.write "#{time}\n"
-    resp.write "#{time.zone}\n"
 
     if time.hour >= 12
       resp.write "Good Afternoon!"
